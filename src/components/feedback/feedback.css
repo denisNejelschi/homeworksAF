@@ -1,0 +1,17 @@
+.feedback-container {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+  }
+  
+  .feedback-item {
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .feedback-item p {
+    font-size: larger;
+    margin: 15px 25px;
+  }
+  
+  

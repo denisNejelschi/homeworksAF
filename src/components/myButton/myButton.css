@@ -11,8 +11,16 @@
   box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
   transition: all 0.3s ease;
   margin-top: 10px;
+  font-family: Roboto sans-serif;
+  font-size: 20px;
 }
 
 .my-button:hover {
   box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
 }
+.my-button:active {
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  color: #F97F51;
+  font-size: 26px;
+}
+

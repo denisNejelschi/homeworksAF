@@ -10,8 +10,9 @@ const LoginForm = () => {
       <Input
         name="name"
         type="user"
-        placeholder="enter your username"
+        placeholder="Enter your username"
         label="Username"
+        value ="12"
       />
       <Input
         name="password"
@@ -19,7 +20,14 @@ const LoginForm = () => {
         placeholder="Enter your password"
         label="Password"
       />
+      <Input
+        name="IBAN"
+        type="password"
+        placeholder="Enter your CVV"
+        label="Confirmation $"
+      />
       <MyButton name="Login" type="submit" />
+      
     </form>
   );
 };

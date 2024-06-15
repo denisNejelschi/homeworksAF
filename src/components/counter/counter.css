@@ -1,0 +1,45 @@
+.counter-container {
+    background-color: #e0e5ec; 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 
+      -8px -8px 16px #ffffff, 
+      8px 8px 16px rgba(0, 0, 0, 0.1); 
+      font-family: Roboto serif;
+      font-size: 25px;
+      font-style: bold;
+      color: #2C3A47;
+  }
+  
+  .counter-container p,
+  .counter-container button {
+    margin: 10px;
+    font-family: Roboto serif;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .counter-container button {
+    background-color: #f0f5fa; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 
+      -4px -4px 8px #ffffff, 
+      4px 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease; 
+  }
+  
+  .counter-container button:hover {
+    transform: translateY(2px); 
+  }
+span{
+    color: red;
+}
+ul{
+   
+    list-style: none;
+
+}
+  
