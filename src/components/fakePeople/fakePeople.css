@@ -1,0 +1,42 @@
+.user {  
+    background-color: #e0e5ec; 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow:
+      -6px -6px 12px rgba(255, 255, 255, 0.8), 
+      6px 6px 12px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .user h1 {
+    margin-bottom: 10px;
+  }
+  
+  .user img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    box-shadow:
+      -4px -4px 8px rgba(255, 255, 255, 0.5),
+      4px 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .user button {
+    background-color: #e0e5ec;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow:
+      -4px -4px 8px rgba(255, 255, 255, 0.5), 
+      4px 4px 8px rgba(0, 0, 0, 0.05); 
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s; 
+  }
+  
+  .user button:active {
+    transform: scale(0.95); 
+    box-shadow:
+      inset 2px 2px 5px rgba(0, 0, 0, 0.1), 
+      2px 2px 5px rgba(255, 255, 255, 0.5);
+  }
+  

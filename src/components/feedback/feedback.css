@@ -2,11 +2,13 @@
     display: flex; 
     justify-content: space-around; 
     align-items: center;
+    
   }
   
   .feedback-item {
     display: flex; 
     align-items: center; 
+    margin: 10px;
   }
   
   .feedback-item p {
