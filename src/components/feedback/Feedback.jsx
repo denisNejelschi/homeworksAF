@@ -26,8 +26,7 @@ const Feedback = () => {
   };
 
   return (
-    <>
-    
+    <>    
     <div className="feedback-container">      
       <div className="feedback-item" onClick={addLike}>
         <MyButton type="button" name="Like" icon={faThumbsUp} />

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './fakePeople.css';
+import MyButton from '../myButton/MyButton';
+import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
 const FakePeople = () => {
   const [users, setUsers] = useState([]);
@@ -24,6 +26,8 @@ const FakePeople = () => {
 
   const handleNextClick = () => {
     setRandomNumber(Math.floor(Math.random() * users.length));
+    console.log(randomNumber);
+    
   };
 
   if (error) {
@@ -40,7 +44,7 @@ const FakePeople = () => {
     <div className="user">
       <h1>{randomUser.name}</h1>
       <img src={randomUser.avatar} alt="User Avatar" />
-      <button onClick={handleNextClick}>Next</button> 
+       <MyButton type="button" name="" icon={faArrowRight} onClick={handleNextClick}/>
     </div>
   );
 };
