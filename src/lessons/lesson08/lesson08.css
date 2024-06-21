@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color:#58B19F ;
+}
+.container{  
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    
+    background-color:#CAD3C8;
+    border-radius: 30px;
+}
+h1{
+    padding: 18px;
+    text-align: center;
+    color: #2C3A47;
+    font-size: 50px;
+    background-color: #BDC581;
+    border-radius: 30px;
+    margin: 10px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #3B3B98;
+    border-radius: 30px;
+}
