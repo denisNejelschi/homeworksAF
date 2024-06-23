@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #e0e0e0;
+}
+
+.login-form {
+  width: 300px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius: 15px;
+  box-shadow: 9px 9px 16px #bebebe, -9px -9px 16px #ffffff;
+  background-color: #e0e0e0;
+}
+
+.login-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.input-wrapper {
+  margin-bottom: 20px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+  background-color: #e0e0e0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.my-button {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+.my-button:hover {
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}

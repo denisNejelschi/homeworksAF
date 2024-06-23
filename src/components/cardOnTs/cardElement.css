@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.title h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.title .blue {
+  color: #007bff;
+}
+
+.title .red {
+  color: #dc3545;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(50% - 20px); /* Adjust the card width for a tablet view */
+  max-width: 300px;
+  margin: 10px;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+  margin: 15px;
+  color: #333;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0 15px;
+  margin: 0 0 15px 0;
+}
+
+.card li {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.card .button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #c82333;
+}
+span{
+  color: gold;
+}

@@ -1,7 +1,7 @@
 import './button.css';
 
 interface IbuttonProps{
-  isGetButton: boolean,
+  isGetButton?: boolean,
   buttonText: string
   onButtonClick?: () => void;
 }

@@ -1,11 +1,11 @@
 .button {
   margin: 5px;
-  width: 300px;
-  padding: 20px 30px;
+  
+  padding: 5px;
   font-size: 28px;
   color: aliceblue;
   border: none;
-  border-radius: 30px;
+  border-radius: 16px;
   border: solid 1.5px rgb(246, 250, 248);
 }
 .button:hover {
