@@ -27,3 +27,4 @@ function LandmarkGallery() {
   }
   
   export default LandmarkGallery;
+  
