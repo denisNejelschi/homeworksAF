@@ -1,23 +1,33 @@
-import './button.css';
+import styles from "./button.module.css";
 
-interface IbuttonProps{
-  isGetButton?: boolean,
-  buttonText: string
+//добавили interface props
+// которые просил добавить ts для безопасности
+
+interface IButtonProps {
+  isGetButton?: boolean;
+  // buttonText необязательный пропс, указан через оператор '?'
+  buttonText?: string;
+  // типизируем props с функцией без return
   onButtonClick?: () => void;
+  buttonType?: "button" | "submit" | "reset";
+  onSubmit?: (e: any) => void;
 }
-function Button({buttonText, isGetButton, onButtonClick}: IbuttonProps) {
-  const sendButton = 'Send data';
-  const getButton = 'Get data';
-  // от значения в этой переменной должен меняться цвет
- 
 
-  // * запись тернарного оператора:
-  // { выражение ? если выражение верное : если выражение ложное }
-
+function Button({
+  buttonText = "push",
+  buttonType = "button",
+  isGetButton = false,
+  onSubmit,
+  onButtonClick,
+}: IButtonProps) {
   return (
     <button
+      type={buttonType}
       onClick={onButtonClick}
-      className={`button ${isGetButton ? 'button-danger' : 'button-primary'}`}
+      onSubmit={onSubmit}
+      className={`${styles.button} ${
+        isGetButton ? styles.buttonDanger : styles.buttonPrimary
+      }`}
     >
       {buttonText}
     </button>
@@ -25,5 +35,3 @@ function Button({buttonText, isGetButton, onButtonClick}: IbuttonProps) {
 }
 
 export default Button;
-
-// сделайте так, чтобы при значении true isGetButton кнопки были одного цвета, а при значении false другого

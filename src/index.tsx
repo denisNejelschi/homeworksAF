@@ -1,11 +1,8 @@
-import React from 'react';
+
 import ReactDOM from 'react-dom/client';
 import './index.css';
-
-import Lesson08 from './lessons/lesson08/Lesson08';
-
-import { v4 } from 'uuid';
-import Homework08 from './homeworks/Homework08';
+import Lesson10 from './lessons/lesson10/Lesson10';
+import Lesson11 from './lessons/lesson11/Lesson11';
 
 
 const root = ReactDOM.createRoot(
@@ -14,8 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   
    <>
-  <Homework08 />
-   
+ <Lesson11 />   
    </>
  
 );

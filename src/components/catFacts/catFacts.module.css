@@ -1,0 +1,127 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 75%;
+  margin: 0 auto;
+  height: 700px;
+  overflow-y: auto;
+}
+
+.loader {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.factContainer {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.factContainer p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.buttonContainer button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttonContainer button:hover {
+  background-color: #0056b3;
+  font-size: 32px;
+  transition: 0.3s;
+}
+
+span {
+  font-size: 22px;
+  color: #F97F51;
+}
+
+span:hover {
+  color: red;
+  font-size: 55px;
+  transition: 0.5s;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .factContainer {
+    padding: 8px;
+    margin-bottom: 2px;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .buttonContainer button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  span {
+    font-size: 18px;
+  }
+
+  span:hover {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    width: 100%;
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .factContainer {
+    padding: 8px;
+    margin-bottom: 6px;
+  }
+
+  .buttonContainer button {
+    padding: 6px ;
+    font-size: 12px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+  span:hover {
+    font-size: 22px;
+  }
+}

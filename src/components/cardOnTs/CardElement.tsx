@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { landmarks, Landmark } from './data'; 
-import './cardElement.css';
 import Button from '../button/Button';
-
+import styles from './cardElement.module.css';
 function LandmarkCard({ landmark, onDelete }: { landmark: Landmark; onDelete: () => void }) {
   return (
-    <div className="card">
+    <div className={styles.card}>
       <img src={landmark.image} alt={landmark.name} />
       <h3>{landmark.name}</h3>
       <ul>
