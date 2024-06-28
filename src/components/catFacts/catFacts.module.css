@@ -34,6 +34,7 @@ h1 {
 .factContainer p {
   margin: 0;
   line-height: 1.5;
+  padding: 10px;
 }
 
 .buttonContainer {
@@ -65,23 +66,12 @@ span {
 span:hover {
   color: red;
   font-size: 55px;
-  transition: 0.5s;
-}
+  transition: 0.5s;}
 
-.imageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
 
-.imageContainer img {
-  max-width: 100%;
-  height: auto;
-}
 
-@media (max-width: 600px) {
+
+@media (max-width: 720px) {
   .container {
     width: 100%;
     padding: 10px;
@@ -113,12 +103,12 @@ span:hover {
 
 @media (max-width: 400px) {
   .container {
-    width: 100%;
+    width: 89%;
     padding: 5px;
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .factContainer {
@@ -127,7 +117,7 @@ span:hover {
   }
 
   .buttonContainer button {
-    padding: 6px 12px;
+    padding: 6px;
     font-size: 12px;
   }
 
