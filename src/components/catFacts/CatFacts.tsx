@@ -35,8 +35,9 @@ const CatFacts = () => {
 
   return (
     <div>
-      <div className={style.loader}>{isLoading && <Spinner />}</div>
+      
       <div className={style.container}>
+      <div className={style.loader}>{isLoading && <Spinner />}</div>
         {facts.length > 0 ? (
           <>
             <h1>Cat Facts</h1>

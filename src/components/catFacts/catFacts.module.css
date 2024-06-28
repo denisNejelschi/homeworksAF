@@ -68,6 +68,19 @@ span:hover {
   transition: 0.5s;
 }
 
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.imageContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width: 600px) {
   .container {
     width: 100%;
@@ -75,8 +88,8 @@ span:hover {
   }
 
   .factContainer {
-    padding: 8px;
-    margin-bottom: 2px;
+    padding: 10px;
+    margin-bottom: 8px;
   }
 
   .buttonContainer {
@@ -98,14 +111,14 @@ span:hover {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   .container {
     width: 100%;
     padding: 5px;
   }
 
   h1 {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .factContainer {
@@ -114,14 +127,15 @@ span:hover {
   }
 
   .buttonContainer button {
-    padding: 6px ;
+    padding: 6px 12px;
     font-size: 12px;
   }
 
   span {
     font-size: 16px;
   }
+
   span:hover {
-    font-size: 22px;
+    font-size: 30px;
   }
 }
