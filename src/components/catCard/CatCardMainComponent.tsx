@@ -20,7 +20,7 @@ export default function CatCardMainComponent() {
     <div className={style.catCardMainComponent}>
       <h2>catCardMainComponent</h2>
       <Button
-        buttonText="Get another image"
+        buttonText="another image"
         onButtonClick={getCatImage}
         isGetButton={false}
       />

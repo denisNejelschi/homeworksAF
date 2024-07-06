@@ -10,7 +10,7 @@ interface IbuttonProps{
 }
 const MyButton = ({ name, type, icon }: IbuttonProps) => {
   return (
-    <button type={type} className="my-button" >
+    <button type={type} className="my_button" >
     <span className="button-icon"><FontAwesomeIcon icon={icon} /> </span>
     {name}
   </button>

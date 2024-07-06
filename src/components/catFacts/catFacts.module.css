@@ -5,8 +5,9 @@
   padding: 20px;
   width: 75%;
   margin: 0 auto;
-  height: 700px;
-  overflow-y: auto;
+  width: auto;
+  /* height: 700px;
+  overflow-y: auto; */
 }
 
 .loader {
@@ -52,7 +53,7 @@ h1 {
   transition: background-color 0.3s ease;
 }
 
-.buttonContainer button:hover {
+ .button:hover {
   background-color: #0056b3;
   font-size: 32px;
   transition: 0.3s;
@@ -67,6 +68,18 @@ span:hover {
   color: red;
   font-size: 55px;
   transition: 0.5s;}
+
+  .factsContainer{
+     
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .factContainer >button{
+    width: 1,6vh;
+    margin-top: 10px;
+    align-items: center;
+  }
 
 
 
@@ -119,6 +132,7 @@ span:hover {
   .buttonContainer button {
     padding: 6px;
     font-size: 12px;
+    width: 100%;
   }
 
   span {

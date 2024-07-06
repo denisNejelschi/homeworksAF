@@ -41,15 +41,16 @@ const CatFacts = () => {
         {facts.length > 0 ? (
           <>
             <h1>Cat Facts</h1>
-            <div>              
+            <div className={style.factsContainer}>              
               {facts.map((fact, index) => (
                 <div key={index} className={style.factContainer}>
                   <p>{fact.fact}</p>
                   <CatCardMainComponent />
-                  <Button
+                  <Button 
                     buttonText="Delete"
                     onButtonClick={() => deleteFact(fact)}
                     isGetButton={true}
+                    
                   />
                 </div>
               ))}

@@ -1,11 +1,11 @@
 import React from "react";
 import MyButton from "../myButton/MyButton";
 import Input from "../input/Input";
-import "./loginForm.css";
+import style from "./loginForm.module.css";
 
 const LoginForm = () => {
   return (
-    <form className="login-form">
+    <form  className={style.login_form}>
       <h2>Login</h2>
       <Input
         name="name"
@@ -26,7 +26,7 @@ const LoginForm = () => {
         placeholder="Enter your CVV"
         label="Confirmation $"
       />
-      <MyButton name="Login" type="submit" icon={undefined} />
+      <button type="submit">Login</button>
       
     </form>
   );
