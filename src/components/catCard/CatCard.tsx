@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "./catCard.module.css";
 import Spinner from "../Spinner/Spinner";
 
+
 interface IcatCardProps {
     imageUrl: string;
 }

@@ -22,7 +22,7 @@ export default function CatCardMainComponent() {
       <Button
         buttonText="another image"
         onButtonClick={getCatImage}
-        isGetButton={false}
+        isGetButton={true}
       />
       <div className="catCardContainer">
         <CatCard imageUrl={catImage} />

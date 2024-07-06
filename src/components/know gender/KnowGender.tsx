@@ -34,7 +34,7 @@ const Know: FC = () => {
 
   return (
     <>
-      <span>✨ secret gender ✨</span>
+      
       
       <form onSubmit={formik.handleSubmit} className={styles.container}>
         <input
@@ -45,6 +45,8 @@ const Know: FC = () => {
         />
         <button type="submit">know secret gender 🤔</button>
       </form>
+      <br />
+      
       {name?.name && (
         <>
           <p>

@@ -1,63 +1,52 @@
-
-:root {
-  --primary-color: #e0e0e0;
-  --shadow-color: #a3b1c6;
-  --highlight-color: #ffffff;
-  --font-color: #333333;
-}
-span{
-  margin: 50px;
-}
-
 .container {
   width: 300px;
-  justify-content: center;
-  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container span {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.container form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background: var(--primary-color);
-  border-radius: 30px;
-  padding: 20px;
-  box-shadow: 8px 8px 16px var(--shadow-color), -8px -8px 16px var(--highlight-color);
-  margin: 0;
 }
 
-input {
-  width: 80%;
-  padding: 15px;
-  margin-bottom: 20px;
+.container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.container button {
+  width: 100%;
+  padding: 10px;
   border: none;
-  border-radius: 20px;
-  background: var(--primary-color);
-  box-shadow: inset 8px 8px 16px var(--shadow-color), inset -8px -8px 16px var(--highlight-color);
-  font-size: 1rem;
-  color: var(--font-color);
-}
-
-input:focus {
-  outline: none;
-}
-
-button {
-  width: 50%;
-  padding: 15px;
-  border: none;
-  border-radius: 20px;
-  background: var(--primary-color);
-  box-shadow: 8px 8px 16px var(--shadow-color), -8px -8px 16px var(--highlight-color);
-  font-size: 1rem;
-  color: var(--font-color);
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  box-shadow: 4px 4px 8px var(--shadow-color), -4px -4px 8px var(--highlight-color);
+.container button:hover {
+  background-color: #0056b3;
 }
-.p{
-  color: red;
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 50px;
+
+.container p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
 }
