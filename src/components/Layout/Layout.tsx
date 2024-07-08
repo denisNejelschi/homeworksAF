@@ -63,6 +63,12 @@ export default function Layout() {
         >
           Form
         </Link>
+        <Link
+          className={location.pathname === "/FakeStore" ? style.active : ""}
+          to={"/FakeStore"}
+        >
+          FakeStore
+        </Link>
       </header>
       <main className={style.main}>
         <Outlet />

@@ -1,0 +1,18 @@
+.container {
+    width: 80%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    border: solid 1px brown;
+    border-radius: 8px;
+    padding: 6px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+image{
+    background: transparent;
+}
