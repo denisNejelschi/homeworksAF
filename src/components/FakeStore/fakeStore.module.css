@@ -6,13 +6,44 @@
     border: solid 1px brown;
     border-radius: 8px;
     padding: 6px;
+    background: #a8c0ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .card{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px double rgba(7, 9, 32, 0.513);
+    margin: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 
 }
+.card:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.card >p{
+    text-align: left;
+    color: rgba(7, 9, 32, 0.513);
+}
 image{
-    background: transparent;
+    width: 240px;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_link{
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    
 }

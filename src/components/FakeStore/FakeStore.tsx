@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import style from "./fakeStore.module.css";
+import MyButton from "../myButton/MyButton";
+import { faCartPlus, faICursor } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
-interface Iproduct {
+export interface Iproduct {
   id: number;
   title: string;
   price: number;
@@ -29,12 +32,14 @@ const FakeStore = () => {
       <div>Products</div>
       <div className={style.container}>
         {products.map((product) => (
-          <div className={style.card}>
+          <div key={product.id} className={style.card}>
             <h2>{product.title}</h2>
-            <h3>{product.price}$</h3>
-            <p>{product.description}</p>
-            <span>{product.category}</span>
             <img src={product.image} alt={product.title} />
+            <br />
+            <br />
+            <Link className={style.button_link} to={String(product.id)}>
+              <MyButton name="get info" type="button"   />
+            </Link>
           </div>
         ))}
       </div>

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 interface IbuttonProps{
   name: string,
   type: "button" | "submit" | "reset" ,	
-  icon: any;
+  icon?: any;
   
 }
 const MyButton = ({ name, type, icon }: IbuttonProps) => {
