@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { IDummyProduct } from "./types/types";
 import styles from "./dummyStore.module.css";
-import MyButton from "../myButton/MyButton";
-import { faInfo } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { Link } from "react-router-dom";
 
 const DummyStore = () => {
