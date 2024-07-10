@@ -1,6 +1,6 @@
 
 .card {
-
+  color: aliceblue;
   background-color: #111; 
   padding: 20px;
   border-radius: 8px; 
@@ -15,7 +15,7 @@
 
 
 .card a {
-  color: pink;
+  color: rgb(243, 239, 240);
   text-decoration: none;
 }
 }
