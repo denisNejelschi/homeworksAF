@@ -59,6 +59,9 @@
     margin-top: 0.5rem;
     cursor: pointer;
   }
+  .credentials{
+    color: gold;
+  }
   
   @media (max-width: 768px) {
     .header {

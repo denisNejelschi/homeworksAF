@@ -41,11 +41,11 @@ const Product = () => {
           <br />
           <div className={styled.buttons}>
             <Link to="/FakeStore">
-              <MyButton name="return to list" type="button" icon={faBackward} />
+            
+            <button className={styled.button} type="button">Back</button>                       
+            
             </Link>
-            <Link to="/">
-              <MyButton name="add to cart" type="button" icon={faCartPlus} />
-            </Link>
+            
           </div>
         </>
       )}

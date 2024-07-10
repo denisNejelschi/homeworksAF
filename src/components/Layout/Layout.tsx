@@ -1,20 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import style from "./layout.module.css";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { userContext } from "../userContext/UserContext";
 
 export default function Layout() {
   const location = useLocation();
+ 
 
   console.log("a я тут ?", location.pathname); 
 
   return (
     <div className={style.page}>
       <header className={style.header}>
+       
         <Link
           className={location.pathname === "/" ? style.active : ""}
-          to={"/"}
+          to={"/Home"}
         >
           home
         </Link>

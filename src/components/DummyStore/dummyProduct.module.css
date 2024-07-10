@@ -1,160 +1,77 @@
-/* Base styles */
 .product {
-  background: linear-gradient(to right, #ff69b4, #000);
-  color: #fff;
+  background-color: black;
+  color: rgb(71, 62, 10);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   max-width: 800px;
-  margin: auto;
-  font-family: 'Arial, sans-serif';
-}
-
-.product h2 {
-  font-size: 2.5em;
-  color: #ff69b4;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.product img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin: 10px 0;
-}
-
-.product p {
-  font-size: 1.2em;
-  line-height: 1.6;
-  margin: 10px 0;
-}
-
-.dimmensions {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  border-radius: 5px;
-  margin: 10px 0;
-}
-
-.reviews {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  border-radius: 5px;
-  margin: 20px 0;
-}
-
-.reviews h4 {
-  font-size: 1.8em;
-  color: #ff69b4;
-}
-
-.reviews div {
-  margin-bottom: 10px;
-}
-
-.reviews p {
-  font-size: 1em;
-  margin: 5px 0;
-}
-
-.reviewer {
-  font-size: 11px;
-  color: blanchedalmond;
-  padding: 9px;
-  border: pink solid 1px;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.7);
+  margin: 0 auto;
 }
 
 button {
-  background: #42275a;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
+  background-color: pink;
+  color: black;
   border: none;
   padding: 10px 20px;
-  border-radius: 10px;
   cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 button:hover {
-  background-color: gray;
+  background-color: gold;
 }
 
-button.all {
+h2 {
+  color: pink;
+}
+
+img {
+  max-width: 100%;
+  border: 2px solid gold;
+  border-radius: 10px;
+}
+
+.dimmensions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dimmensions ul li {
+  margin: 5px 0;
+}
+
+.reviews {
   background-color: pink;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.reviews h4 {
   color: black;
 }
 
-button.all:hover {
-  background-color: white;
-  color: violet;
+.reviewer {
+  color: black;
 }
 
-li {
-  list-style: none;
-  cursor: pointer;
-}
-
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .product {
-    padding: 5px;
-    max-width: 100%;
-  }
-
-  .product h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
-  }
-
-  .product p, .reviews p, .reviews h4 {
-    font-size: 1em;
-  }
-
-  .dimmensions, .reviews {
-    padding: 2px;
-    margin: 1px 0;
-  }
-
-  .reviewer {
-    font-size: 10px;
-    padding: 3px;
+    padding: 10px;
   }
 
   button {
-    padding: 8px 6px;
-  }
-}
-
-@media (max-width: 480px) {
-  .product {
-    padding: 1px;
-    max-width: 100%;
+    padding: 5px 10px;
   }
 
-  .product h2 {
-    font-size: 1em;
-    margin-bottom: 1px;
+  h2 {
+    font-size: 1.5rem;
   }
 
-  .product p, .reviews p, .reviews h4 {
-    font-size: 0.9em;
+  .dimmensions ul li {
+    font-size: 0.9rem;
   }
 
-  .dimmensions, .reviews {
-    padding: 6px;
-    margin: 1px 0;
-  }
-
-  .reviewer {
-    font-size: 9px;
+  .reviews {
     padding: 5px;
-  }
-
-  button {
-    padding: 6px 8px;
   }
 }

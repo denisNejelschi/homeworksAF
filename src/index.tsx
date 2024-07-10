@@ -13,15 +13,18 @@ import FakeStore from "./components/FakeStore/FakeStore";
 import Product from "./components/FakeStore/Product/Product";
 import DummyStore from "./components/DummyStore/DummyStore";
 import DummyProduct from "./components/DummyStore/DummyProduct";
+import { UserProvider } from "./components/userContext/UserContext";
+import Home from "./components/home/Home";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <HashRouter>
+  <UserProvider>
+    <HashRouter>
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route path="/" element="homepage" />
+        <Route path="/Home" element={<Home />} />
         <Route path="/LandmarkGallery" element={<LandmarkGallery />} />
         <Route path="/CatFacts" element={<CatFacts/>} />
         <Route path="/Login" element={<LoginForm />} />
@@ -37,6 +40,7 @@ root.render(
       </Route>
     </Routes>
   </HashRouter>
+  </UserProvider>
 );
 
 

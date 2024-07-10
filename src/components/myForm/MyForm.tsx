@@ -1,8 +1,9 @@
-import React, { FC } from "react";
+import React, { FC, useContext } from "react";
 import { useFormik } from "formik";
 import style from "./myForm.module.css";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
+import { userContext } from "../userContext/UserContext";
 
 interface IFormValues {
   firstName: string;
@@ -11,13 +12,16 @@ interface IFormValues {
 }
 
 const MyForm: FC = () => {
-  const navigate =useNavigate();
+  const { setUser } = useContext(userContext);
+  const navigate = useNavigate();
   const schema = Yup.object().shape({
     firstName: Yup.string()
       .min(2, "Too Short!")
       .required("First Name is Required🤷‍♂️"),
     lastName: Yup.string().required(" Last Name🤦‍♀️🤦‍♀️🤦‍♀️ is Required "),
-    email: Yup.string().email("incorrect👌 email format").required("надо федя, надо!"),
+    email: Yup.string()
+      .email("incorrect👌 email format")
+      .required("надо федя, надо!"),
   });
   const formik = useFormik({
     initialValues: {
@@ -28,9 +32,9 @@ const MyForm: FC = () => {
     validationSchema: schema,
     validateOnChange: false,
     onSubmit: (values: IFormValues) => {
+      setUser(values);
       console.log(values);
-      navigate("/")
-      alert("Form Submitted");
+      
     },
   });
 
@@ -62,9 +66,9 @@ const MyForm: FC = () => {
       />
 
       <button type="submit">submit</button>
-      <span>{formik.errors.firstName}</span>
-      <span>{formik.errors.lastName}</span>
-      <span>{formik.errors.email}</span>
+      <p>{formik.errors.firstName}</p>
+      <p>{formik.errors.lastName}</p>
+      <p>{formik.errors.email}</p>
     </form>
   );
 };

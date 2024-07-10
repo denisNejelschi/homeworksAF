@@ -1,6 +1,6 @@
 import React from "react";
-import './myButton.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styled from "./myButton.module.css";
 
 interface IbuttonProps{
   name: string,
@@ -10,7 +10,7 @@ interface IbuttonProps{
 }
 const MyButton = ({ name, type, icon }: IbuttonProps) => {
   return (
-    <button type={type} className="my_button" >
+    <button type={type} className={styled.my_button} >
     <span className="button-icon"><FontAwesomeIcon icon={icon} /> </span>
     {name}
   </button>

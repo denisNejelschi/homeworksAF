@@ -1,0 +1,34 @@
+
+.card {
+
+  background-color: #111; 
+  padding: 20px;
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  text-align: center; 
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+.card a {
+  color: pink;
+  text-decoration: none;
+}
+}
+.link_buttons{
+  width: 160px;
+  background-color: pink;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: auto;
+  gap: 5px;
+}

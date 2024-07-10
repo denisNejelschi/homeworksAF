@@ -62,7 +62,7 @@ const DummyStore = () => {
       <p>Homework 49</p>
       {products.length > 0 && (
         <>
-          <div className={styles.buttons}>
+          <div className={styles.link_buttons}>
             {seenCategories.map((category) => (
               <button
                 key={category}

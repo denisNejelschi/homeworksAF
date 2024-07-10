@@ -1,19 +1,38 @@
+
 .product {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
-    border: 2px double rgba(7, 9, 32, 0.513);
-    margin: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: black;
+  color: #ccc;
+  padding: 40px;
+  text-align: center;
 }
-.buttons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    gap: 10px;
+
+.product h1 {
+  color: pink;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
+
+.product img {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+  border: 2px solid pink; 
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+button{
+  background-color: pink;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+

@@ -1,4 +1,4 @@
-/* Base styles */
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -36,13 +36,14 @@
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 .buttons button {
   background-color: black;
   color: white;
   border: none;
-  padding: 10px 20px;
+  
   border-radius: 10px;
   cursor: pointer;
 }
